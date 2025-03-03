@@ -1,12 +1,12 @@
 <?php
 include("../db_connection/connection.php"); 
 
-// Check if the request method is POST
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
+// Check if the request method is GET
+if ($_SERVER["REQUEST_METHOD"] === "GET") {
     // Check if email and password are set
-    if (isset($_POST["email"]) && isset($_POST["password"])) {
-        $email = $_POST["email"];
-        $password = $_POST["password"];
+    if (isset($_GET["email"]) && isset($_GET["password"])) {
+        $email = $_GET["email"];
+        $password = $_GET["password"];
 
         // Prepare and execute the query to find the user by email
         $query = $mysqli->prepare("SELECT user_id, password_hash FROM Users WHERE email = ?");
@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $response["message"] = "Missing email or password.";
     }
 }   else {
-        // Invalid request method (GET not POST)
+        // Invalid request method (POST not GET)
         $response = [];
         $response["success"] = false;
         $response["message"] = "Invalid request method.";

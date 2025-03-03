@@ -1,19 +1,19 @@
 <?php 
 include("../db_connection/connection.php"); 
 
-// Check if the request method is POST
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
+// Check if the request method is GET
+if ($_SERVER["REQUEST_METHOD"] === "GET") {
     // Check if required fields are set
-    if (isset($_POST["full_name"]) && isset($_POST["username"]) && 
-        isset($_POST["email"]) && isset($_POST["password"]) && 
-        isset($_POST["phone_number"]) && isset($_POST["user_address"])) {
+    if (isset($_GET["full_name"]) && isset($_GET["username"]) && 
+        isset($_GET["email"]) && isset($_GET["password"]) && 
+        isset($_GET["phone_number"]) && isset($_GET["user_address"])) {
         
-        $full_name = $_POST["full_name"];
-        $username = $_POST["username"];
-        $email = $_POST["email"];
-        $password = $_POST["password"];
-        $phone_number = $_POST["phone_number"];
-        $user_address = $_POST["user_address"];
+        $full_name = $_GET["full_name"];
+        $username = $_GET["username"];
+        $email = $_GET["email"];
+        $password = $_GET["password"];
+        $phone_number = $_GET["phone_number"];
+        $user_address = $_GET["user_address"];
 
         // Check if the email or username already exists
         $query = $mysqli->prepare("SELECT user_id FROM Users WHERE email = ? OR username = ?");
@@ -60,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $response["message"] = "Missing fields.";
     }
 } else {
-    // Invalid request method (GET not POST)
+    // Invalid request method (POST not GET)
     $response = [];
     $response["success"] = false;
     $response["message"] = "Invalid request method.";
