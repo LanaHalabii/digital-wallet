@@ -23,31 +23,31 @@
 - wallets ( **wallet_id**, user_id, balance, currency, created_at, updated_at )
 
   # Relational Database
-**1. Users & Wallets : 1-to-many**
-Each user can have many wallet, and each wallet belongs to one user
-**2. Users & User notifications : 1-to-many**
-Each user can have many notifications, and each notification belongs to one user
-**3. Users & Transactions : 1-to-many**
-Each user can have many transactions, and each transaction belongs to one user
-**4. Users & Transaction limits : 1-to-1**
-Each user has one transaction limit, and each transaction limit belongs to one user
-**5. Users & Tickets : 1-to-many**
-Each user can have many tickets, and each ticket belongs to one user
-**6. Admin & Ticket responses : 1-to-many**
-Each admin can respond to many tickets, and each ticket is responded to by one admin
-**7. User & System Logs : 1-to-1**
-Each user has one system log, and each system log belongs to one user
-**8. Users & Social logins : 1-to-1**
-Each user has one social login, and each social login belongs to one user
-**9. Users & Scheduled payments : 1-to-many**
-Each user can create many shceduled payments, and each scheduled payment belongs to one user
-**10. Users & QR transactions : 1-to-many**
-Each user can create many QR transactions, and each QR transaction belongs to one user
-**11. Users & Internal transfers : 1-to-many**
-Each user can have many internal transfer, and each internal transfer belongs to one user
-**12. Users & Identity verification : 1-to-1**
-Each user has one identity verification, and each indentity verification belongs to one user
-**13. Users & transaction history : 1-to-1**
-Each user has one transaction history, and each transaction history belongs to one user
-**14. Users & Analytics : 1-to-many**
-Each user has many analytics, and each analytic belongs to one user
+**1. Users & Wallets : 1-to-many** <br>
+Each user can have many wallet, and each wallet belongs to one user <br>
+**2. Users & User notifications : 1-to-many** <br>
+Each user can have many notifications, and each notification belongs to one user <br>
+**3. Users & Transactions : 1-to-many** <br>
+Each user can have many transactions, and each transaction belongs to one user <br>
+**4. Users & Transaction limits : 1-to-1** <br>
+Each user has one transaction limit, and each transaction limit belongs to one user <br>
+**5. Users & Tickets : 1-to-many** <br>
+Each user can have many tickets, and each ticket belongs to one user <br>
+**6. Admin & Ticket responses : 1-to-many** <br>
+Each admin can respond to many tickets, and each ticket is responded to by one admin <br>
+**7. User & System Logs : 1-to-1** <br>
+Each user has one system log, and each system log belongs to one user <br>
+**8. Users & Social logins : 1-to-1** <br>
+Each user has one social login, and each social login belongs to one user <br>
+**9. Users & Scheduled payments : 1-to-many** <br>
+Each user can create many shceduled payments, and each scheduled payment belongs to one user <br>
+**10. Users & QR transactions : 1-to-many** <br>
+Each user can create many QR transactions, and each QR transaction belongs to one user <br>
+**11. Users & Internal transfers : 1-to-many** <br>
+Each user can have many internal transfer, and each internal transfer belongs to one user <br>
+**12. Users & Identity verification : 1-to-1** <br>
+Each user has one identity verification, and each indentity verification belongs to one user <br>
+**13. Users & transaction history : 1-to-1** <br>
+Each user has one transaction history, and each transaction history belongs to one user <br>
+**14. Users & Analytics : 1-to-many** <br>
+Each user has many analytics, and each analytic belongs to one user <br>
