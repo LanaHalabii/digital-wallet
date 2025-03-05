@@ -1,0 +1,24 @@
+.footer {
+    background-color: #052659;
+    margin-top: 20px;
+    justify-content: center;
+    align-self: center;
+}
+
+.footer-container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    color: white;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7da0ca;
+    padding-top: 50px;
+    padding-bottom: 110px;
+}
