@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     loginButton.addEventListener("click", function(event) {
         event.preventDefault(); 
-        console.log("Login button clicked!"); // Debugging line
+        console.log("Login button clicked!"); // Debugging line for testing the button
         window.location.href = "../Pages/user-home.html"; 
     });
 });
+
