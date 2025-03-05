@@ -56,4 +56,8 @@ Each user has many analytics, and each analytic belongs to one user <br>
 For this project, we could include the API that belongs to Stripe. It's use case is for payment processing: It basically could help in setting up payment methods, handling recurring payments and implementing webhook for payment notifications. <br>
 Stripe access & interpretation into project : https://docs.stripe.com/get-started/development-environment 
 
-# 4. 
+# 4. Hosting Details 
+# IP
+http://13.38.76.3/wallet-server/
+# Github Pages
+https://lanahalabii.github.io/
