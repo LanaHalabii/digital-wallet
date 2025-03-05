@@ -51,3 +51,9 @@ Each user has one identity verification, and each indentity verification belongs
 Each user has one transaction history, and each transaction history belongs to one user <br>
 **14. Users & Analytics : 1-to-many** <br>
 Each user has many analytics, and each analytic belongs to one user <br>
+
+# 3. API Documentation
+For this project, we could include the API that belongs to Stripe. It's use case is for payment processing: It basically could help in setting up payment methods, handling recurring payments and implementing webhook for payment notifications. <br>
+Stripe access & interpretation into project : https://docs.stripe.com/get-started/development-environment 
+
+# 4. 
