@@ -1,0 +1,318 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.navbar { 
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+}
+
+.nav-logo {
+    margin-left: 20px;
+}
+
+li {
+    color: black;
+    font-size: 20px ;
+}
+
+.nav-menu {
+    display: flex; 
+    flex-grow: 1; 
+    justify-content: center; 
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    flex-wrap: wrap;
+    margin: 10px 10px;
+    margin: 10px 0;
+}
+
+.nav-list-item {
+    margin-right: 20px; 
+    color: black;
+}
+
+.nav-list  a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 20px;
+    width: 11%;
+}
+
+.nav-buttons-item {
+    font-size: 15px;
+    background-color: #052659 ;
+    color: white;
+    border-radius: 100px;
+    border: none;
+    width: 80px;
+    height: 35px;
+    text-decoration: none;
+}
+
+.nav-buttons-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center; 
+    height: 450px; 
+    background-color: #052659; 
+    padding: 20px; 
+    overflow: hidden; 
+}
+
+.hero-section-text {
+    color: white;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.features {
+    padding: 40px 0;
+    text-align: center;
+    font-size: 20px;
+    background-color: #7da0ca;
+}
+
+.feature-item {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.engage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 20px;
+    background-color: white;
+}
+
+.footer-image {
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: #052659;
+    margin-top: 20px;
+    justify-content: center;
+    align-self: center;
+}
+
+.footer-container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    color: white;
+    margin-left: 20px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.about > h2 {
+    font-size: 20px;
+    color: #052659 ;
+}
+
+.second-container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    background-color: #5483B3;
+    color: white;
+}
+
+.second-container > a {
+    color: #052659;
+}
+
+.third-container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    background-color: white;
+    color:  #052659;
+}
+
+.login-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #052659;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+ .login-button {
+    background-color: #052659;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+ .login-button:hover {
+    background-color: #7da0ca;
+}
+
+.login-footer {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7da0ca;
+    padding-top: 50px;
+    padding-bottom: 170px;
+}
+
+.signup-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7da0ca;
+    padding-top: 50px;
+    padding-bottom: 170px;
+
+}
+
+.signup-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.signup-button {
+    background-color: #052659;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.signup-button:hover {
+    background-color: #7da0ca;
+}
+
+input[type="text"],
+input[type="tel"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.dashboard-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #7da0ca;
+    padding-top: 50px;
+    padding-bottom: 115px;
+}
+
+.dashboard-container {
+    display: flex;
+    width: 80%;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.sidebar {
+    width: 20%;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+}
+
+.wallet-info {
+    width: 80%;
+    padding-left: 20px;
+}
+
+.wallet-info h4 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.wallet {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
