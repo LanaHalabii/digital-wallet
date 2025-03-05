@@ -1,4 +1,7 @@
 <?php
+header("Access-Control-Allow-Origin: *"); // Allow all origins
+header("Access-Control-Allow-Methods: GET, POST"); // Allow specific request methods
+header("Access-Control-Allow-Headers: Content-Type"); // Allow specific headers
 include("../db_connection/connection.php"); 
 
 // Check if the request method is GET
